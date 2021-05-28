@@ -92,7 +92,26 @@ export default class App extends React.Component {
       <div>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Covid-19 Thailand Info</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                alt=""
+                src="https://www.torqaid.com/wp-content/uploads/2020/07/covid19_icon-002.png"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              Covid-19 in TH Information
+            </Navbar.Brand>
+            <Navbar.Toggle />
+            <Navbar.Collapse className="justify-content-end">
+              <Navbar.Text>
+                <i>
+                  Data from: <a href={results.source}>{results.source}</a>
+                  <br />
+                  UpDatedOn: {results.updatedDate}
+                </i>
+              </Navbar.Text>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
         <br />
@@ -255,9 +274,10 @@ export default class App extends React.Component {
             </ResponsiveContainer>
           </CardGroup>
           <Card.Footer className="text-center">
-            Made with ❤️
+            Made with ❤️ by SOPHANITH
             <br />
-            Get Source Code
+            Get Source Code{' '}
+            <a href="https://github.com/msphanith/covid-th-info">HERE</a>
           </Card.Footer>
         </Container>
       </div>
