@@ -197,10 +197,10 @@ export default class App extends React.Component {
               <Card.Header className="text-center">
                 ចំនួនអ្នកដែលបានឆ្លងជម្ងឹកូវិត១៩ក្នុងប្រទេសកម្ពុជា
               </Card.Header>
-              <Card.Title>
+              <Card.Title className="text-center">
                 <iframe
                   src="https://covid19-map.cdcmoh.gov.kh/list_views?location_info=00"
-                  style={{ width: '600px', height: '400px' }}
+                  style={{ width: '400px', height: '400px' }}
                 />
               </Card.Title>
             </Card>
@@ -208,10 +208,15 @@ export default class App extends React.Component {
               <Card.Header className="text-center">
                 តំបន់ដែលមានការឆ្លង
               </Card.Header>
-              <iframe
-                src="https://covid19-map.cdcmoh.gov.kh/?display_mode=map"
-                style={{ width: '600px', height: '400px' }}
-              />
+              <Card.Title className="text-center">
+                <iframe
+                  src="https://covid19-map.cdcmoh.gov.kh/?display_mode=map"
+                  style={{
+                    width: '400px',
+                    height: '400px'
+                  }}
+                />
+              </Card.Title>
             </Card>
           </CardGroup>
           <Card.Footer className="text-center">
