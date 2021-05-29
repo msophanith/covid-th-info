@@ -101,7 +101,7 @@ export default class App extends React.Component {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              Covid-19 in TH Information
+              Covid-19 in TH & CAM
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
@@ -192,6 +192,38 @@ export default class App extends React.Component {
             </Col>
           </Row>
           <br />
+          <CardGroup>
+            <Card>
+              <Card.Header className="text-center">
+                ចំនួនអ្នកដែលបានឆ្លងជម្ងឹកូវិត១៩ក្នុងប្រទេសកម្ពុជា
+              </Card.Header>
+              <Card.Title>
+                <iframe
+                  src="https://covid19-map.cdcmoh.gov.kh/list_views?location_info=00"
+                  style={{ width: '600px', height: '400px' }}
+                />
+              </Card.Title>
+            </Card>
+            <Card>
+              <Card.Header className="text-center">
+                តំបន់ដែលមានការឆ្លង
+              </Card.Header>
+              <iframe
+                src="https://covid19-map.cdcmoh.gov.kh/?display_mode=map"
+                style={{ width: '600px', height: '400px' }}
+              />
+            </Card>
+          </CardGroup>
+          <Card.Footer className="text-center">
+            ទិន្នន័យពី{' '}
+            <a href="https://covid19-map.cdcmoh.gov.kh/" target="/">
+              គេហទំព័រប្រព័ន្ធតាមដានជំងឺកូវីដ១៩
+            </a>
+          </Card.Footer>
+          <hr />
+          <Card.Header className="text-center">
+            Graph of Covid-19 in TH
+          </Card.Header>
           <CardGroup>
             <Card>
               <ResponsiveContainer width="100%" height={400}>
