@@ -107,7 +107,10 @@ export default class App extends React.Component {
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text>
                 <i>
-                  Data from: <a href={results.source}>{results.source}</a>
+                  Data from:{' '}
+                  <a href={results.source} target="/">
+                    {results.source}
+                  </a>
                   <br />
                   UpDatedOn: {results.updatedDate}
                 </i>
@@ -279,7 +282,9 @@ export default class App extends React.Component {
             Made with ❤️ by SOPHANITH
             <br />
             Get Source Code{' '}
-            <a href="https://github.com/msphanith/covid-th-info">HERE</a>
+            <a href="https://github.com/msphanith/covid-th-info" target="/">
+              HERE
+            </a>
           </Card.Footer>
         </Container>
       </div>
