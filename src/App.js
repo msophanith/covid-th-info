@@ -73,7 +73,8 @@ export default class App extends React.Component {
           data_pie: [
             { name: 'hospitalized', value: lastData['Hospitalized'] },
             { name: 'deaths', value: lastData['Deaths'] },
-            { name: 'recovered', value: lastData['Recovered'] }
+            { name: 'recovered', value: lastData['Recovered'] },
+            { name: 'newCases', value: lastData['Confirmed'] }
           ]
         });
       })
@@ -228,6 +229,7 @@ export default class App extends React.Component {
                     <Cell fill="#e0bf60" />
                     <Cell fill="#f52900" />
                     <Cell fill="#8FC1A9" />
+                    <Cell fill="#1c6bff" />
                   </Pie>
                   <Tooltip />
                 </PieChart>
